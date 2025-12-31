@@ -1,0 +1,9 @@
+name: Reusable Workflow
+on:
+  workflow_call: # هذا هو المحرك الذي يفعل الخاصية التي تقرأ عنها
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from the reusable workflow!"
